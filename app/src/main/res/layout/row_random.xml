@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:background="@color/black80">
+
+    <ProgressBar
+        android:id="@+id/rsrp_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:max="10"
+        android:progress="5"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/rsrp"
+        app:layout_constraintEnd_toEndOf="@id/rsrp"
+        app:layout_constraintStart_toStartOf="@id/rsrp"
+        app:layout_constraintTop_toTopOf="@id/rsrp" />
+
+    <TextView
+        android:id="@+id/rsrp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:text="@string/rsrp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ProgressBar
+        android:id="@+id/rsrq_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:max="10"
+        android:progress="5"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/rsrq"
+        app:layout_constraintEnd_toEndOf="@id/rsrq"
+        app:layout_constraintStart_toStartOf="@id/rsrq"
+        app:layout_constraintTop_toTopOf="@id/rsrq" />
+
+    <TextView
+        android:id="@+id/rsrq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:text="@string/rsrq"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/sinr"
+        app:layout_constraintStart_toEndOf="@id/rsrp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ProgressBar
+        android:id="@+id/sinr_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:max="10"
+        android:progress="5"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/sinr"
+        app:layout_constraintEnd_toEndOf="@id/sinr"
+        app:layout_constraintStart_toStartOf="@id/sinr"
+        app:layout_constraintTop_toTopOf="@id/sinr" />
+
+    <TextView
+        android:id="@+id/sinr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:text="@string/snr"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

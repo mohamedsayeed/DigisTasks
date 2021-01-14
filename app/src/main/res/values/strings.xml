@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Digis</string>
+    <string name="rsrp">RSRP</string>
+    <string name="snr">SINR</string>
+    <string name="rsrq">RSRQ</string>
+    <string name="charts">Charts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
